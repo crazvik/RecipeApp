@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="se.ecutb.jonatan.recipeApp.assignment3">
-
+    package="se.ecutb.jonatan.recipeApp">
     <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,16 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="se.ecutb.jonatan.recipeApp.pages.RecipeDetails"></activity>
+        <activity android:name="se.ecutb.jonatan.recipeApp.pages.RecipeDetails" />
     </application>
-
-    <!-- </application>
-     <activity android:name=".DetailActivity"></activity>
-        <activity android:name=".DetailActivity"></activity>
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar" />
-    </application>
-        -->
-</manifest>
+        </manifest>
