@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="se.ecutb.jonatan.recipeApp.pages.RecipeDetails">
+
+
+    <TextView
+            android:id="@+id/txtRecipeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/recipe_name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="end"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/time"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+
+    <TextView
+            android:id="@+id/txtType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="end"
+            android:paddingStart="100dp"
+            android:paddingEnd="100dp"
+            android:text="@string/type"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/description"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtRecipeName"
+        />
+
+    <TextView
+            android:id="@+id/txtIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            android:text="@string/ingredients"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/txtlabel1" />
+
+    <TextView
+            android:id="@+id/txtlabel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:text="@string/ingredients"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="18sp"
+            android:textStyle="italic|bold"
+            app:layout_constraintTop_toBottomOf="@+id/txtTime" />
+
+    <TextView
+            android:id="@+id/txtlabel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:text="@string/steps"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/txtIngredients" />
+
+    <TextView
+        android:id="@+id/txtSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="@string/steps"
+
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtlabel2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
